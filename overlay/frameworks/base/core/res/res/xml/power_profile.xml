@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<device name="Android">
+    <item name="cpu.awake">1.4</item>
+    <item name="cpu.idle">1.4</item>
+    <item name="battery.capacity">5000</item>
+</device>
