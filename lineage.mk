@@ -20,7 +20,7 @@ $(call inherit-product, device/asus/X00I/full_X00I.mk)
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_X00I
-BOARD_VENDOR := asus
+BOARD_VENDOR := Asus
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 

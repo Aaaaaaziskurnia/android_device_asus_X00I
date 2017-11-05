@@ -22,8 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/asus/X00I/device.mk)
 
 # Device identifier. This must come after all inclusions
+TARGET_VENDOR := Asus
 PRODUCT_DEVICE := X00I
 PRODUCT_NAME := full_X00I
-PRODUCT_BRAND := asus
-PRODUCT_MODEL := X00I
-PRODUCT_MANUFACTURER := asus
+PRODUCT_BRAND := Asus
+PRODUCT_MODEL := Zenfone 4 Max
+PRODUCT_MANUFACTURER := Asus
