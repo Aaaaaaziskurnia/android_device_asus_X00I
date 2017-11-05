@@ -228,7 +228,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
-    loggy.sh \
     init.target.rc \
     ueventd.qcom.rc
 
