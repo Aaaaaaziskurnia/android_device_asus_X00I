@@ -344,7 +344,7 @@
         <ImageEncoding quality="70" />
         <ImageDecoding memCap="20000000" />
 
-<EncoderProfile quality="highspeedlow" fileFormat="mp4" duration="30"><Video codec="h264" bitRate="42000000" width="1280" height="720" frameRate="120" /><Audio codec="aac" bitRate="96000" sampleRate="48000" channels="1" /></EncoderProfile><EncoderProfile quality="highspeedhigh" fileFormat="mp4" duration="30"><Video codec="h264" bitRate="42000000" width="1920" height="1080" frameRate="60" /><Audio codec="aac" bitRate="96000" sampleRate="48000" channels="1" /></EncoderProfile><EncoderProfile quality="highspeed720p" fileFormat="mp4" duration="30"><Video codec="h264" bitRate="42000000" width="1280" height="720" frameRate="120" /><Audio codec="aac" bitRate="96000" sampleRate="48000" channels="1" /></EncoderProfile><EncoderProfile quality="highspeed1080p" fileFormat="mp4" duration="30"><Video codec="h264" bitRate="42000000" width="1920" height="1080" frameRate="60" /><Audio codec="aac" bitRate="96000" sampleRate="48000" channels="1" /></EncoderProfile></CamcorderProfiles>
+    </CamcorderProfiles>
     <!-- Front Camera -->
     <CamcorderProfiles cameraId="1">
 
@@ -595,7 +595,7 @@
         <ImageEncoding quality="70" />
         <ImageDecoding memCap="20000000" />
 
-<EncoderProfile quality="highspeedlow" fileFormat="mp4" duration="30"><Video codec="h264" bitRate="42000000" width="1280" height="720" frameRate="120" /><Audio codec="aac" bitRate="96000" sampleRate="48000" channels="1" /></EncoderProfile><EncoderProfile quality="highspeedhigh" fileFormat="mp4" duration="30"><Video codec="h264" bitRate="42000000" width="1920" height="1080" frameRate="60" /><Audio codec="aac" bitRate="96000" sampleRate="48000" channels="1" /></EncoderProfile><EncoderProfile quality="highspeed720p" fileFormat="mp4" duration="30"><Video codec="h264" bitRate="42000000" width="1280" height="720" frameRate="120" /><Audio codec="aac" bitRate="96000" sampleRate="48000" channels="1" /></EncoderProfile><EncoderProfile quality="highspeed1080p" fileFormat="mp4" duration="30"><Video codec="h264" bitRate="42000000" width="1920" height="1080" frameRate="60" /><Audio codec="aac" bitRate="96000" sampleRate="48000" channels="1" /></EncoderProfile></CamcorderProfiles>
+    </CamcorderProfiles>
     <!-- Ext Camera -->
     <CamcorderProfiles cameraId="2">
 
@@ -846,7 +846,7 @@
         <ImageEncoding quality="70" />
         <ImageDecoding memCap="20000000" />
 
-<EncoderProfile quality="highspeedlow" fileFormat="mp4" duration="30"><Video codec="h264" bitRate="42000000" width="1280" height="720" frameRate="120" /><Audio codec="aac" bitRate="96000" sampleRate="48000" channels="1" /></EncoderProfile><EncoderProfile quality="highspeedhigh" fileFormat="mp4" duration="30"><Video codec="h264" bitRate="42000000" width="1920" height="1080" frameRate="60" /><Audio codec="aac" bitRate="96000" sampleRate="48000" channels="1" /></EncoderProfile><EncoderProfile quality="highspeed720p" fileFormat="mp4" duration="30"><Video codec="h264" bitRate="42000000" width="1280" height="720" frameRate="120" /><Audio codec="aac" bitRate="96000" sampleRate="48000" channels="1" /></EncoderProfile><EncoderProfile quality="highspeed1080p" fileFormat="mp4" duration="30"><Video codec="h264" bitRate="42000000" width="1920" height="1080" frameRate="60" /><Audio codec="aac" bitRate="96000" sampleRate="48000" channels="1" /></EncoderProfile></CamcorderProfiles>
+    </CamcorderProfiles>
 
     <EncoderOutputFileFormat name="3gp" />
     <EncoderOutputFileFormat name="mp4" />
