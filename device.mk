@@ -37,6 +37,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
+    frameworks/native/data/etc/android.hardware.camera.full.xml:system/etc/permissions/android.hardware.camera.full.xml \
+    frameworks/native/data/etc/android.hardware.camera.raw.xml:system/etc/permissions/android.hardware.camera.raw.xml \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml \
     frameworks/native/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:system/etc/permissions/android.hardware.opengles.aep.xml \
@@ -142,6 +144,13 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
+    FM2 \
+    libfmjni \
+    libqcomfm_jni \
+    qcom.fmradio
+
+# FM
+PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
 
@@ -161,7 +170,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/izat.conf:system/etc/izat.conf \
     $(LOCAL_PATH)/gps/etc/lowi.conf:system/etc/lowi.conf \
     $(LOCAL_PATH)/gps/etc/sap.conf:system/etc/sap.conf \
-    $(LOCAL_PATH)/gps/etc/xtwifi.conf:system/etc/xtwifi.conf \
+    $(LOCAL_PATH)/gps/etc/xtwifi.conf:system/etc/xtwifi.conf
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -234,6 +243,7 @@ PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
+    init.qcom.power.rc \
     init.qcom.rc \
     init.qcom.sh \
     init.qcom.usb.rc \
@@ -244,7 +254,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.qcom.bt.sh \
-    init.qcom.post_boot.sh
+    init.qcom.post_boot.sh \
+    init.qti.ims.sh
 
 # RIL
 PRODUCT_PACKAGES += \

@@ -1,2 +1,2 @@
 type focalfp, domain;
-type focalp_device, dev_type;
+type focalfp_device, dev_type;

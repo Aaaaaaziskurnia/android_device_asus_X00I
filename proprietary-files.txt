@@ -38,8 +38,6 @@ vendor/lib/libhwdaphal.so
 vendor/lib/libmdsprpc.so
 vendor/lib/libqct_resampler.so
 vendor/lib/libsurround_3mic_proc.so
-lib/hw/audio.primary.msm8937.so
-lib64/hw/audio.primary.msm8937.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
@@ -199,13 +197,7 @@ vendor/lib64/libxml.so
 # Camera
 bin/mm-qcamera-app
 bin/mm-qcamera-daemon
-lib/libmmcamera_interface.so
-lib/libmmjpeg_interface.so
-lib/libmorpho_panorama_gp.so
 lib/libmpbase.so
-lib/libqomx_core.so
-lib/libmm-omxcore.so
-lib/libsigchain.so
 lib/libarcsoft_hdr.so
 lib/libarcsoft_piczoom.so
 lib/libarcsoft_nighthawk.so
@@ -214,8 +206,6 @@ lib/libarcsoft_beautyshot.so
 lib/libarcsoft_night_shot.so
 lib/libarcsoft_face_tracking.so
 lib/libarcsoft_panorama_burstcapture.so
-lib64/libmm-omxcore.so
-lib64/libsigchain.so
 vendor/lib/libChamomilePA.so
 vendor/lib/libarcsoft_vs_intf.so
 vendor/lib/libarcsoft_arc3dnr_intf.so
@@ -658,15 +648,12 @@ etc/firmware/cpp_firmware_v1_12_0.fw
 bin/hvdcp_opti
 
 # DPM
-priv-app/dpmserviceapp/dpmserviceapp.apk
-bin/dpm
 bin/dpmd
 etc/dpm/dpm.conf
 etc/permissions/com.qti.dpmframework.xml
 etc/permissions/dpmapi.xml
 framework/com.qti.dpmframework.jar
 framework/dpmapi.jar
-framework/dpm.jar
 framework/tcmclient.jar
 framework/tcmiface.jar
 vendor/lib/libdpmtcm.so
@@ -704,7 +691,7 @@ vendor/lib/libsecureui_svcsock.so
 vendor/lib/libsecureuisvc_jni.so
 vendor/lib/libssd.so
 vendor/lib/libtzdrmgenprov.so
-vendor/lib/mediadrm/libdrmclearkeyplugin.so
+
 vendor/lib64/lib-sec-disp.so
 vendor/lib64/libGPTEE.so
 vendor/lib64/libGPreqcancel.so
@@ -723,14 +710,12 @@ vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libsecureuisvc_jni.so
 vendor/lib64/libssd.so
 vendor/lib64/libtzdrmgenprov.so
-vendor/lib64/mediadrm/libdrmclearkeyplugin.so
+
 
 # Firmwares
 etc/firmware/DE.o.msm8937
 
 # FIDO
-app/FidoCryptoService/FidoCryptoService.apk
-app/FidoSuiService/FidoSuiService.apk
 vendor/lib/libFidoCrypto.so
 vendor/lib/libFidoCryptoJNI.so
 vendor/lib/libFIDOKeyProvisioning.so
@@ -939,10 +924,6 @@ bin/ipacm-diag
 vendor/lib/hw/keystore.msm8937.so
 vendor/lib64/hw/keystore.msm8937.so
 
-# Lights
-lib/hw/lights.msm8937.so
-lib64/hw/lights.msm8937.so
-
 # Listen
 vendor/lib/hw/sound_trigger.primary.msm8937.so
 vendor/lib/libadpcmdec.so
@@ -950,32 +931,13 @@ vendor/lib/libsmwrapper.so
 
 # Media
 lib/libOmxVpp.so
-lib/libOmxCore.so
-lib/libOmxVdec.so
-lib/libOmxVenc.so
-lib/libOmxAacEnc.so
-lib/libOmxAmrEnc.so
 lib/libOmxSwVdec.so
-lib/libOmxEvrcEnc.so
-lib/libOmxQcelp13Enc.so
 lib/libOmxSwVencMpeg4.so
-lib/libmm-omxcore.so
-lib/libqomx_core.so
-lib/libstagefright_omx.so
 lib/libstagefright_soft_flacdec.so
 lib/libvpplibrary.so
 lib64/libOmxVpp.so
-lib64/libOmxCore.so
-lib64/libOmxVdec.so
-lib64/libOmxVenc.so
-lib64/libOmxAacEnc.so
-lib64/libOmxAmrEnc.so
 lib64/libOmxSwVdec.so
-lib64/libOmxEvrcEnc.so
-lib64/libOmxQcelp13Enc.so
 lib64/libOmxSwVencMpeg4.so
-lib64/libmm-omxcore.so
-lib64/libstagefright_omx.so
 lib64/libstagefright_soft_flacdec.so
 lib64/libvpplibrary.so
 vendor/lib/libAlacSwDec.so
@@ -1196,6 +1158,7 @@ bin/imsqmidaemon
 etc/permissions/imscm.xml
 framework/imscmlibrary.jar
 framework/rcsimssettings.jar
+-vendor/app/colorservice/colorservice.apk
 -vendor/app/ims/ims.apk
 -vendor/app/imssettings/imssettings.apk
 vendor/lib64/lib-dplmedia.so
@@ -1221,6 +1184,15 @@ vendor/lib64/libimscamera_jni.so
 vendor/lib64/libimsmedia_jni.so
 vendor/lib64/librcc.so
 vendor/lib64/libvoice-svc.so
+
+# RIDL
+vendor/bin/RIDLClient.exe
+vendor/etc/RIDL/RIDL.db
+vendor/etc/RIDL/GoldenLogmask.dmc
+vendor/etc/RIDL/OTA-Logs.dmc
+vendor/etc/RIDL/qdss.cfg
+vendor/etc/RIDL/RIDL.db
+vendor/lib/libsregex.so
 
 # Sensors
 bin/sensors.qcom
@@ -1304,8 +1276,6 @@ vendor/lib/libTimeService.so
 vendor/lib64/libTimeService.so
 
 #WFD
-app/WfdService/WfdService.apk
-framework/WfdCommon.jar
 bin/wfdservice
 vendor/lib/libwfdavenhancements.so
 vendor/lib/libwfdcommonutils.so
@@ -1355,7 +1325,6 @@ vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so
 # Wi-Fi
 bin/cnss-daemon
 bin/cnss_diag
-bin/wcnss_service
 bin/fstman
 lib/modules/pronto/pronto_wlan.ko:lib/modules/wlan.ko
 

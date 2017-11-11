@@ -1,4 +1,4 @@
-allow fingerprintd elanfp_device:chr_file { read write ioctl open };
+allow fingerprintd focalfp_device:chr_file { read write ioctl open };
 allow fingerprintd fingerprint_socket:file rw_file_perms;
 allow fingerprintd gx_fpd:binder { transfer call };
 allow fingerprintd init:unix_stream_socket connectto;
