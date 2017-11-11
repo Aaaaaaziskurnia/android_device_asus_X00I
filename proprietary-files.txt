@@ -199,8 +199,6 @@ vendor/lib64/libxml.so
 # Camera
 bin/mm-qcamera-app
 bin/mm-qcamera-daemon
-lib/hw/camera.msm8937.so
-lib/libmm-qcamera.so
 lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
 lib/libmorpho_panorama_gp.so
