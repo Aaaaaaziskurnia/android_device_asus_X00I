@@ -20,6 +20,7 @@ include $(CLEAR_VARS)
 
 LOCAL_C_INCLUDES := system/core/init
 LOCAL_MODULE := libinit_X00I
+LOCAL_CFLAGS := -Wall -DANDROID_TARGET=\"$(TARGET_BOARD_PLATFORM)\"
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := init_X00I.cpp
 
