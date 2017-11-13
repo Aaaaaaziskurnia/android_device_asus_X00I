@@ -195,7 +195,6 @@ vendor/lib64/libwqe.so
 vendor/lib64/libxml.so
 
 # Camera
-bin/mm-qcamera-app
 bin/mm-qcamera-daemon
 lib/libmpbase.so
 lib/libarcsoft_hdr.so
@@ -727,7 +726,6 @@ vendor/lib64/libFidoSuiJNI.so
 
 # Fingerprint
 bin/gx_fpd
-lib64/hw/fingerprint.default.so
 lib64/hw/gxfingerprint.default.so
 lib64/hw/fingerprintfocal.default.so
 lib64/libfpjni.so
@@ -916,6 +914,13 @@ vendor/lib64/libhbtpdsp.so
 vendor/lib64/libhbtpjni.so
 vendor/lib64/libhbtpfrmwk.so
 vendor/lib64/libhbtpclient.so
+
+# HQ related
+bin/hq_ftm
+bin/nvram_country
+bin/getpersistlog
+vendor/bin/esepmdaemon
+bin/ptt_socket_app
 
 # Ipacm
 bin/ipacm-diag
@@ -1137,6 +1142,11 @@ framework/qti-telephony-common.jar
 vendor/bin/qti
 vendor/lib/liblqe.so
 vendor/lib/libmdmdetect.so
+vendor/lib/libril-qc-qmi-1.so
+vendor/lib/librilqmiservices.so
+vendor/lib/libril-qc-radioconfig.so
+vendor/lib/libril-qcril-hook-oem.so
+vendor/lib/libril-qc-ltedirectdisc.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/liblqe.so
 vendor/lib64/libmdmdetect.so
@@ -1275,7 +1285,8 @@ vendor/lib/libTimeService.so
 -vendor/lib64/libtime_genoff.so
 vendor/lib64/libTimeService.so
 
-#WFD
+# WFD
+bin/ATFWD-daemon
 bin/wfdservice
 vendor/lib/libwfdavenhancements.so
 vendor/lib/libwfdcommonutils.so
@@ -1323,6 +1334,8 @@ vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so
 
 
 # Wi-Fi
+bin/wcnss_filter
+bin/wcnss_service
 bin/cnss-daemon
 bin/cnss_diag
 bin/fstman
