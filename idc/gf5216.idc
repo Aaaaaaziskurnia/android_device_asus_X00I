@@ -9,8 +9,6 @@
 #
 
 device.internal = 1
-
+keyboard.orientationAware = 1 
 keyboard.layout = gf5216
-keyboard.builtIn = 1
-keyboard.orientationAware = 1
 

@@ -8,9 +8,6 @@
 # as published by the Free Software Foundation.
 #
 
-device.internal = 1
-
-keyboard.layout = qcom-tpd
-keyboard.builtIn = 1
-keyboard.orientationAware = 1
+touch.deviceType = touchScreen
+touch.orientationAware = 1
 

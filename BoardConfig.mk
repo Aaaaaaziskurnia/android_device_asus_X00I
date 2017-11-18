@@ -44,6 +44,8 @@ BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_CONFIG := X00I_defconfig
 TARGET_KERNEL_SOURCE := kernel/asus/msm8937
+#TARGET_KERNEL_CONFIG := msm8937-perf_defconfig
+#TARGET_KERNEL_SOURCE := kernel/asus/msm-3.18
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
@@ -219,7 +221,7 @@ USE_SENSOR_MULTI_HAL := true
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
+#BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
 
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true

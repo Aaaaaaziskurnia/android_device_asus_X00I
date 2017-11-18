@@ -51,10 +51,10 @@ static void fp_prop()
     memset(fp_drv, 0, sizeof(fp_drv));
     int result = read(fd, fp_drv, sizeof(fp_drv));
 
-    if (strcmp(fp_drv, "focal_fp") == 0) {
-        property_set("persist.sys.fp.goodix", "0");
+    if (strcmp(fp_drv, "focal_fp") == 1) {
+        property_set("persist.sys.fp.focal", "0");
     } else if (strcmp(fp_drv, "goodix_fp") == 0) {
-        property_set("persist.sys.fp.goodix", "1");
+        property_set("persist.sys.fp.focal", "1");
     } else if (strcmp(fp_drv, "silead_fp_dev") == 0) {
         ERROR("%s: Silead fpsvcd fingerprint sensor is unsupported", __func__);
     } else {

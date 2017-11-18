@@ -20,6 +20,15 @@
 # a new key layout file with the required keyboard configuration. 
 # 
  
-key 139   APP_SWITCH    VIRTUAL 
-key 158   BACK        VIRTUAL 
+
+#add by HQ Lingyuguo for gesture start 
+key 752   GESTURE_C            VIRTUAL 
+key 753   GESTURE_E            VIRTUAL 
+key 754   GESTURE_S            VIRTUAL 
+key 755   GESTURE_V            VIRTUAL 
+key 756   GESTURE_W            VIRTUAL 
+key 757   GESTURE_Z            VIRTUAL 
+key 758   GESTURE_SWIPE_UP        VIRTUAL 
+key 759   GESTURE_DOUBLE_CLICK      VIRTUAL 
+#add by HQ Lingyuguo for gesture end 
 

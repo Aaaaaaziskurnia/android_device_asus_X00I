@@ -149,11 +149,6 @@ PRODUCT_PACKAGES += \
     libqcomfm_jni \
     qcom.fmradio
 
-# FM
-PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni
-
 # Fs_config
 PRODUCT_PACKAGES += \
     fs_config_files
@@ -176,6 +171,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/qcom-tpd.idc:system/usr/idc/qcom-tpd.idc \
     $(LOCAL_PATH)/idc/gf5216.idc:system/usr/idc/gf5216.idc
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/kcm/qcom-tpd.kcm:system/usr/keychars/qcom-tpd.kcm
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/ASUS_TransKeyboard.kl:system/usr/keylayout/ASUS_TransKeyboard.kl \
@@ -183,9 +180,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/keylayout/qcom-tpd.kl:system/usr/keylayout/qcom-tpd.kl \
     $(LOCAL_PATH)/keylayout/gf5216.kl:system/usr/keylayout/gf5216.kl \
-    $(LOCAL_PATH)/keylayout/qpnp_pon.kl:system/usr/keylayout/qpnp_pon.kl \
-    $(LOCAL_PATH)/keylayout/synaptics_dsx.kl:system/usr/keylayout/synaptics_dsx.kl \
-    $(LOCAL_PATH)/keylayout/synaptics_rmi4_i2c.kl:system/usr/keylayout/synaptics_rmi4_i2c.kl
+    $(LOCAL_PATH)/keylayout/qpnp_pon.kl:system/usr/keylayout/qpnp_pon.kl
 
 # IPA Manager
 PRODUCT_PACKAGES += \
