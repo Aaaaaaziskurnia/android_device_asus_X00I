@@ -25,46 +25,49 @@
    IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
 #include <fcntl.h>
-#define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
-#include <sys/_system_properties.h>
+#include <stdlib.h>
+#include <sys/sysinfo.h>
 
-#include "log.h"
-#include "property_service.h"
-#include "util.h"
 #include "vendor_init.h"
+#include "property_service.h"
+#include "log.h"
+#include "util.h"
 
-#define DRV_INFO "/sys/devices/platform/fp_drv/fp_drv_info"
+char const *heapstartsize;
+char const *heapgrowthlimit;
+char const *heapsize;
+char const *heapminfree;
+char const *heapmaxfree;
+char const *large_cache_height;
 
-static void fp_prop()
+static void init_alarm_boot_properties()
 {
-    int fd = open(DRV_INFO, 0);
-    if (fd <= 0) {
-        ERROR("Cannot open: %s", DRV_INFO);
-    }
+    int boot_reason;
+    FILE *fp;
 
-    char fp_drv[50];
-    memset(fp_drv, 0, sizeof(fp_drv));
-    int result = read(fd, fp_drv, sizeof(fp_drv));
+    fp = fopen("/proc/sys/kernel/boot_reason", "r");
+    fscanf(fp, "%d", &boot_reason);
+    fclose(fp);
 
-    if (strcmp(fp_drv, "focal_fp") == 1) {
-        property_set("persist.sys.fp.focal", "0");
-    } else if (strcmp(fp_drv, "goodix_fp") == 0) {
-        property_set("persist.sys.fp.focal", "1");
-    } else if (strcmp(fp_drv, "silead_fp_dev") == 0) {
-        ERROR("%s: Silead fpsvcd fingerprint sensor is unsupported", __func__);
-    } else {
-        ERROR("%s: Fingerprint sensor is unsupported", __func__);
-    }
-    close(fd);
+    /*
+     * Setup ro.alarm_boot value to true when it is RTC triggered boot up
+     * For existing PMIC chips, the following mapping applies
+     * for the value of boot_reason:
+     *
+     * 0 -> unknown
+     * 1 -> hard reset
+     * 2 -> sudden momentary power loss (SMPL)
+     * 3 -> real time clock (RTC)
+     * 4 -> DC charger inserted
+     * 5 -> USB charger inserted
+     * 6 -> PON1 pin toggled (for secondary PMICs)
+     * 7 -> CBLPWR_N pin toggled (for external power supply)
+     * 8 -> KPDPWR_N pin toggled (power key pressed)
+     */
+     if (boot_reason == 3) {
+        property_set("ro.alarm_boot", "true");
+     } else {
+        property_set("ro.alarm_boot", "false");
+     }
 }
-
-void vendor_load_properties()
-{
-    fp_prop();
-}
-
