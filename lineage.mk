@@ -21,9 +21,3 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_X00I
 BOARD_VENDOR := Asus
-
-PRODUCT_GMS_CLIENTID_BASE := android-asus
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT="asus/WW_Phone/ASUS_X00ID:7.1.1/NMF26F/14.2016.1709.160-20171009:user/release-keys" \
-    PRIVATE_BUILD_DESC="msm8937_64-user 7.1.1 NMF26F 14.2016.1709.160-20171009 release-keys"
