@@ -185,6 +185,7 @@ PRODUCT_COPY_FILES += \
 # IPA Manager
 PRODUCT_PACKAGES += \
     ipacm \
+    ipacm-diag \
     IPACM_cfg.xml
 
 # IRQ
