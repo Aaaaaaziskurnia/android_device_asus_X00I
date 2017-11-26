@@ -141,7 +141,10 @@ PRODUCT_PACKAGES += \
     FM2 \
     libfmjni \
     libqcomfm_jni \
-    qcom.fmradio
+    libfm-hci \
+    fm_helium \
+    qcom.fmradio \
+    fmhal_service
 
 # Fs_config
 PRODUCT_PACKAGES += \
