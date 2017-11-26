@@ -285,12 +285,18 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libqsap_sdk \
     libQWiFiSoftApCfg \
+    libwcnss_qmi \
     libwpa_client \
+    libwifi-hal-qcom \
     hostapd \
     dhcpcd.conf \
     wpa_supplicant \
     wpa_supplicant.conf \
     wcnss_service
+
+PRODUCT_PACKAGES += \
+    tcpdump \
+    fstman
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/hostapd.accept:system/etc/hostapd/hostapd.accept \
