@@ -65,6 +65,7 @@ PRODUCT_COPY_FILES += \
 
 # ANT
 PRODUCT_PACKAGES += \
+    antradio_app \
     AntHalService \
     com.dsi.ant.antradio_library \
     libantradio
