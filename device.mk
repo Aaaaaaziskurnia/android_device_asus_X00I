@@ -16,6 +16,9 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
+$(call inherit-product, device/asus/X00I/hwui-memory.mk)
+$(call inherit-product, device/asus/X00I/dalvik-heap.mk)
+
 $(call inherit-product, vendor/asus/X00I/X00I-vendor.mk)
 
 # Overlays
@@ -139,13 +142,8 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FM2 \
-    libfmjni \
-    libqcomfm_jni \
-    libfm-hci \
-    fm_helium \
-    qcom.fmradio \
-    fmhal_service
+    FMRadio \
+    libfmjni
 
 # Fs_config
 PRODUCT_PACKAGES += \
@@ -220,17 +218,30 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libmm-omxcore \
     libc2dcolorconvert \
-    libextmedia_jni \
     libOmxAacEnc \
     libOmxAmrEnc \
     libOmxCore \
     libOmxEvrcEnc \
     libOmxQcelp13Enc \
+    libOmxSwVdec \
+    libOmxSwVencMpeg4 \
     libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
     libOmxVidcCommon \
-    libstagefrighthw
+    libqomx_core \
+    libstagefrighthw \
+    libstagefright_soft_flacdec
+
+# QCAV
+PRODUCT_PACKAGES += \
+    qcmediaplayer \
+    libqcmediaplayer \
+    libdashplayer \
+    libextmedia_jni
+
+
+
 
 # Power
 PRODUCT_PACKAGES += \
@@ -246,7 +257,7 @@ PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
-    init.qcom.power.rc \
+    init.msm.usb.configfs.rc \
     init.qcom.rc \
     init.qcom.sh \
     init.qcom.usb.rc \
@@ -286,9 +297,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libqsap_sdk \
     libQWiFiSoftApCfg \
-    libwcnss_qmi \
     libwpa_client \
-    libwifi-hal-qcom \
     hostapd \
     dhcpcd.conf \
     wpa_supplicant \

@@ -22,3 +22,25 @@ It was released in September 2017.
 ## Device Picture
 
 ![Asus Zenfone 4 Max](https://cdn2.gsmarena.com/vv/pics/asus/asus-zenfone-4-max-zc554kl1.jpg "Asus Zenfone 4 Max")
+
+## Progress
+
+Known Issue             | Descripton
+:---------------------- | :-----------------------------------------------------------------------------------
+Boots					| Yes
+Ril						| Working (SIM 1, SIM 2)
+Sensor					| Working (Accellerometer, gyro, light, proxymity)
+Camera					| (Front Camera, Front Flashlight, Rear Main Camera, Rear Sub-camera, and Rear Flashlight)
+Camera Video Recording	| Working
+Camera Photo Capture	| Working
+Fingerprint				| Working (Goodix, looking Focaltech variant user)
+Bluetooth				| Currently in investigation
+Speaker					| Working
+Wifi					| Working
+GPS						| Working
+Touchkey				| Working
+FM Radio				| Working
+USB switch				| (Always stay at charger mode, no notification for must manually change the mode via developer option to make it works)
+USB tethering			| Working
+Wifi Hotspot			| Working
+Charger Screen			| Flipped Screen, But charging doing fine. 
