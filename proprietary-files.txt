@@ -711,7 +711,7 @@ etc/firmware/DE.o.msm8937|62c8a6ce7e6d81c3b9778d92db126e02a54e692f
 
 # Fingerprint - from Stock
 bin/fingerprintd|447d038761af9fff64276185b88bd9c0c78809d0
-lib64/hw/fingerprint.default.so:lib64/hw/fingerprint.msm8937.so|264193b7c087e65ef938c3e32312dbc273b6c645
+lib64/hw/fingerprint.default.so|264193b7c087e65ef938c3e32312dbc273b6c645
 bin/gx_fpd|c34daaedea39ebecb2f9acabb15dc10d5c8f0963
 lib64/hw/fingerprintfocal.default.so|ae89fbf8a00339a1014ef1367f1ce29bb24eef10
 lib64/hw/gxfingerprint.default.so|9954d86236cb8642a4b6fcaac83cdec39b375ec2
