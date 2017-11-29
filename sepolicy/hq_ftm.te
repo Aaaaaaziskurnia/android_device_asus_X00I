@@ -1,0 +1,6 @@
+type huaqin, domain; 
+type huaqin_exec, exec_type, file_type; 
+
+ 
+# hq_ftm 
+init_daemon_domain(huaqin) 

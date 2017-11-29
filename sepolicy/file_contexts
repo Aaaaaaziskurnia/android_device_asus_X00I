@@ -12,3 +12,9 @@
 
 # Fingerprint
 sys/devices/platform/fp_drv/fp_drv_info      u:object_r:sysfs_fp:s0 
+
+# Huaqin
+system/bin/hq_ftm                u:object_r:huaqin_exec:s0
+
+# nvram_country
+system/bin/nvram_country                u:object_r:nvram_country_exec:s0

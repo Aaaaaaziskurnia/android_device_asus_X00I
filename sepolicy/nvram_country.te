@@ -1,0 +1,6 @@
+type nvram_country, domain; 
+type nvram_country_exec, exec_type, file_type; 
+
+ 
+# hq_ftm 
+init_daemon_domain(nvram_country) 
