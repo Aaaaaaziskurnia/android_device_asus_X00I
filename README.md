@@ -34,7 +34,7 @@ Camera					| (Front Camera, Front Flashlight, Rear Main Camera, Rear Sub-camera,
 Camera Video Recording	| Working
 Camera Photo Capture	| Working
 Fingerprint				| Working (Goodix, looking Focaltech variant user)
-Bluetooth				| Currently in investigation
+Bluetooth				| Working
 Speaker					| Working
 Wifi					| Working
 GPS						| Working
