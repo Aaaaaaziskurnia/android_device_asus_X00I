@@ -43,4 +43,4 @@ FM Radio				| Working
 USB switch				| (Always stay at charger mode, no notification for must manually change the mode via developer option to make it works)
 USB tethering			| Working
 Wifi Hotspot			| Working
-Charger Screen			| Flipped Screen, But charging doing fine. 
+Charger Screen			| Fixed The flipped screen
