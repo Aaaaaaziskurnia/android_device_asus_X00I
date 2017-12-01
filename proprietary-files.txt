@@ -974,10 +974,20 @@ vendor/lib64/libQtiTether.so|811873a0e84c5f2c064cbcd339e1e23263a4415f
 bin/iop|4c903fbfbb162e2148fb3cfa24363c74e92d0f1e
 bin/msm_irqbalance|ab907828fa49dbc2f37e863ef877fdcef2cd1cf6
 vendor/bin/perfd|01c69f62669adb2a75e41de16b3f04b3fa89f243
+lib/hw/power.qcom.so|6eac2e511e830ec9761605c069cb3bec646ba735
+lib64/hw/power.qcom.so|21a8835129430f9f904801d468be43c13256b4a3
 vendor/lib/libqti-iop-client.so|b83b7eda3f5cb9e6b403bf23d33aade6486eacbe
+vendor/lib/libqti-iop.so|8c63454a3c700ca994a3bdf6c3656867c4772c0c
 vendor/lib/libqti-perfd-client.so|006a867d373b58152f5ad5ebd86956957c85dfff
+vendor/lib/libqti-at.so|87b968f46bcd57b5c85680ec66e1bef398ad7169
+vendor/lib/libqti-wl.so|a1a1b9e5177031c0002c13ecb0ad62f67e824680
+vendor/lib/libqti_performance.so|7a0fdaa6e225a59734853fc09dee128a39819d4d
 vendor/lib64/libqti-iop-client.so|8efab91ae35283cf819e217cd73f5c7c11d907b0
 vendor/lib64/libqti-perfd-client.so|c2250fc44f2a5f25b4f445247cc3369822278cff
+vendor/lib64/libqti-at.so|178936bccb8566e6da83198ecc7d9cc598c71d18
+vendor/lib64/libqti-wl.so|82111f4518ce142d4b55fe5ffcefeff2b76a2d2c
+vendor/lib64/libqti_performance.so|04c7c6084a499682c7e43f4bdd72b3f270033ad6
+
 
 # Peripheral manager - from Stock
 bin/pm-proxy|5f085bf05e7b2aab4f41b1c005e27c3360d35aba
